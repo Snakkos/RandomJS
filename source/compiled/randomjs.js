@@ -12,7 +12,7 @@ function randomFloat(min, max) {
 function randomString(characters, length) {
     var generatedString = "";
     if (characters.length == 0) {
-        console.log("Warning: Generating a string unsing an empty characters list");
+        console.log("Warning: Generating one or more random strings unsing an empty characters list");
     }
     for (var i = 0; i < length; i++) {
         generatedString += characters.charAt(randomInt(0, characters.length - 1));
