@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomJS</title>
+    <script src="js/randomjs.js"></script>
+    <style>
+        body { padding: 40px; }
+        h3 { margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <h3>Random integer</h3>
+    <p id="randomInteger"></p>
+    <h3>Random float</h3>
+    <p id="randomFloat"></p>
+    <h3>Random string</h3>
+    <p id="randomString"></p>
+
+    <script>
+        document.getElementById("randomInteger").innerText = randomInt(0, 10)
+        document.getElementById("randomFloat").innerText = randomFloat(0, 1)
+        document.getElementById("randomString").innerText = randomString(CHARACTERS_ALPHANUMERIC_AND_SYMBOLS, 32)
+    </script>
+</body>
+</html>
