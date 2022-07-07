@@ -16,7 +16,7 @@ function randomString(characters: string, length: number): string {
     let generatedString: string = ""
 
     if(characters.length == 0) {
-        console.log("Warning: Generating a string unsing an empty characters list")
+        console.log("Warning: Generating one or more random strings unsing an empty characters list")
     }
 
     for(let i = 0; i < length; i++) {
